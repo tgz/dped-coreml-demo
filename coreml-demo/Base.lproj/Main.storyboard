@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,52 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="coreml_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgT-bN-vfe">
+                                <rect key="frame" x="24" y="20" width="30" height="30"/>
+                                <state key="normal" title="Run"/>
+                                <connections>
+                                    <action selector="runButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7It-ao-NMb"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LFu-kJ-ZjY">
+                                <rect key="frame" x="16" y="58" width="343" height="257.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LFu-kJ-ZjY" secondAttribute="height" multiplier="4:3" id="hUl-BK-cd2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="drv-OR-cd3">
+                                <rect key="frame" x="16" y="323" width="343" height="257.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="drv-OR-cd3" secondAttribute="height" multiplier="4:3" id="emt-ii-peb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="drv-OR-cd3" firstAttribute="top" secondItem="LFu-kJ-ZjY" secondAttribute="bottom" constant="7.5" id="47a-Zx-vWs"/>
+                            <constraint firstItem="LFu-kJ-ZjY" firstAttribute="top" secondItem="ZgT-bN-vfe" secondAttribute="bottom" constant="8" id="Bqm-QS-7sC"/>
+                            <constraint firstItem="LFu-kJ-ZjY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="I7k-lZ-2nT"/>
+                            <constraint firstItem="ZgT-bN-vfe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KQL-4r-NcI"/>
+                            <constraint firstItem="ZgT-bN-vfe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="RPB-0y-mz0"/>
+                            <constraint firstItem="drv-OR-cd3" firstAttribute="trailing" secondItem="LFu-kJ-ZjY" secondAttribute="trailing" id="UAK-sP-EOL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LFu-kJ-ZjY" secondAttribute="trailing" constant="16" id="US6-fZ-XPF"/>
+                            <constraint firstItem="drv-OR-cd3" firstAttribute="leading" secondItem="LFu-kJ-ZjY" secondAttribute="leading" id="xn4-fu-4db"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomImage" destination="drv-OR-cd3" id="fKP-vo-Alv"/>
+                        <outlet property="topImage" destination="LFu-kJ-ZjY" id="Iip-bV-5Go"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

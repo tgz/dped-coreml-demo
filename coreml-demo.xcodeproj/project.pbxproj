@@ -12,6 +12,16 @@
 		5A8EE8372004490A00705647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A8EE8352004490A00705647 /* Main.storyboard */; };
 		5A8EE8392004490A00705647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A8EE8382004490A00705647 /* Assets.xcassets */; };
 		5A8EE83C2004490A00705647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A8EE83A2004490A00705647 /* LaunchScreen.storyboard */; };
+		5A8EE8442004491500705647 /* 12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A8EE8432004491500705647 /* 12.jpg */; };
+		5A8EE85020044D6500705647 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EE84820044D6500705647 /* Math.swift */; };
+		5A8EE85120044D6500705647 /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EE84920044D6500705647 /* UIImage+CVPixelBuffer.swift */; };
+		5A8EE85220044D6500705647 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EE84A20044D6500705647 /* Array.swift */; };
+		5A8EE85320044D6500705647 /* Predictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EE84B20044D6500705647 /* Predictions.swift */; };
+		5A8EE85420044D6500705647 /* MultiArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EE84C20044D6500705647 /* MultiArray.swift */; };
+		5A8EE85520044D6500705647 /* CVPixelBuffer+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EE84D20044D6500705647 /* CVPixelBuffer+Helpers.swift */; };
+		5A8EE85620044D6500705647 /* NonMaxSuppression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EE84E20044D6500705647 /* NonMaxSuppression.swift */; };
+		5A8EE85720044D6500705647 /* MLMultiArray+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EE84F20044D6500705647 /* MLMultiArray+Image.swift */; };
+		5AF3192E200F2E8300AC7728 /* dped.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3192D200F2E8300AC7728 /* dped.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,16 @@
 		5A8EE8382004490A00705647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A8EE83B2004490A00705647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A8EE83D2004490A00705647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A8EE8432004491500705647 /* 12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.jpg; sourceTree = "<group>"; };
+		5A8EE84820044D6500705647 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		5A8EE84920044D6500705647 /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		5A8EE84A20044D6500705647 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		5A8EE84B20044D6500705647 /* Predictions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Predictions.swift; sourceTree = "<group>"; };
+		5A8EE84C20044D6500705647 /* MultiArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiArray.swift; sourceTree = "<group>"; };
+		5A8EE84D20044D6500705647 /* CVPixelBuffer+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Helpers.swift"; sourceTree = "<group>"; };
+		5A8EE84E20044D6500705647 /* NonMaxSuppression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonMaxSuppression.swift; sourceTree = "<group>"; };
+		5A8EE84F20044D6500705647 /* MLMultiArray+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLMultiArray+Image.swift"; sourceTree = "<group>"; };
+		5AF3192D200F2E8300AC7728 /* dped.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = dped.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,9 @@
 		5A8EE8302004490A00705647 /* coreml-demo */ = {
 			isa = PBXGroup;
 			children = (
+				5AF3192D200F2E8300AC7728 /* dped.mlmodel */,
+				5A8EE84720044D6500705647 /* CoreMLHelpers */,
+				5A8EE8432004491500705647 /* 12.jpg */,
 				5A8EE8312004490A00705647 /* AppDelegate.swift */,
 				5A8EE8332004490A00705647 /* ViewController.swift */,
 				5A8EE8352004490A00705647 /* Main.storyboard */,
@@ -62,6 +85,21 @@
 				5A8EE83D2004490A00705647 /* Info.plist */,
 			);
 			path = "coreml-demo";
+			sourceTree = "<group>";
+		};
+		5A8EE84720044D6500705647 /* CoreMLHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				5A8EE84820044D6500705647 /* Math.swift */,
+				5A8EE84920044D6500705647 /* UIImage+CVPixelBuffer.swift */,
+				5A8EE84A20044D6500705647 /* Array.swift */,
+				5A8EE84B20044D6500705647 /* Predictions.swift */,
+				5A8EE84C20044D6500705647 /* MultiArray.swift */,
+				5A8EE84D20044D6500705647 /* CVPixelBuffer+Helpers.swift */,
+				5A8EE84E20044D6500705647 /* NonMaxSuppression.swift */,
+				5A8EE84F20044D6500705647 /* MLMultiArray+Image.swift */,
+			);
+			path = CoreMLHelpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A8EE8442004491500705647 /* 12.jpg in Resources */,
 				5A8EE83C2004490A00705647 /* LaunchScreen.storyboard in Resources */,
 				5A8EE8392004490A00705647 /* Assets.xcassets in Resources */,
 				5A8EE8372004490A00705647 /* Main.storyboard in Resources */,
@@ -137,7 +176,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A8EE8342004490A00705647 /* ViewController.swift in Sources */,
+				5A8EE85320044D6500705647 /* Predictions.swift in Sources */,
+				5A8EE85120044D6500705647 /* UIImage+CVPixelBuffer.swift in Sources */,
+				5A8EE85220044D6500705647 /* Array.swift in Sources */,
+				5A8EE85420044D6500705647 /* MultiArray.swift in Sources */,
+				5A8EE85520044D6500705647 /* CVPixelBuffer+Helpers.swift in Sources */,
 				5A8EE8322004490A00705647 /* AppDelegate.swift in Sources */,
+				5A8EE85720044D6500705647 /* MLMultiArray+Image.swift in Sources */,
+				5A8EE85620044D6500705647 /* NonMaxSuppression.swift in Sources */,
+				5A8EE85020044D6500705647 /* Math.swift in Sources */,
+				5AF3192E200F2E8300AC7728 /* dped.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GARYDKLD88;
 				INFOPLIST_FILE = "coreml-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.qsc.demo.coreml-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +341,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GARYDKLD88;
 				INFOPLIST_FILE = "coreml-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.qsc.demo.coreml-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
